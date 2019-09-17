@@ -1,0 +1,11 @@
+header {
+  padding: 30px 15px;
+}
+
+header.active {
+  background-color: red;
+}
+
+header.non-active {
+  background-color: blue;
+}
