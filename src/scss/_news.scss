@@ -1,0 +1,25 @@
+.news {
+  &__title-main {
+    color: rgb(70, 6, 6);
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &::-webkit-scrollbar {
+    background-color: rgb(70, 6, 6);
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgb(83, 165, 192);
+    background-clip: content-box;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(70, 6, 6);
+    border-radius: 4px;
+    width: 180px;
+  }
+}

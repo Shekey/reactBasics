@@ -1,36 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Header extends Component {
-  state = {
-    active: 'active',
-    keywords: ''
-  }
-
-  inputHandle = (event) => {
-    const value = event.target.value ==='' ? 'active' : 'non-active';
-    this.setState({
-      active: value,
-      keywords: event.target.value
-    });
-  }
-  render() {
-    const style = {
-      padding: '50px 0 50px 30px',
-      background: 'red'
-    }
-
-    if (this.state.keywords !== '') {
-      style.background = 'blue'
-    } else {
-      style.background = 'red'
-    }
-
+const Header = (props) => {
     return (
-      <header className={this.state.active}>
-        <input type='text' name='input_text' onChange={this.inputHandle}></input>
+      <header className='header'>
+        <h4 className='header__title'>This is short app with news filtering</h4>
+        <input type='text' name='input_text' className='header__input' onChange={props.keywords} placeholder='Please enter a keyword'></input>
       </header>
     )
-  }
 }
 
 export default Header;

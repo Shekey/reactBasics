@@ -1,0 +1,44 @@
+.news {
+  &__item {
+    border-bottom: 1px solid grey;
+    padding: 20px;
+    background: white;
+    transition: background-color 0.35s ease-in;
+
+    &:hover {
+      cursor: pointer;
+      border-bottom: none;
+      background: rgb(83, 165, 192);
+      transition: background-color 0.35s, border-color 0.35s ease-in;
+
+      .news {
+        &__title {
+          color: white;
+          transition: color 0.25s ease-in;
+        }
+
+        &__content {
+          color: white;
+          transition: color 0.25s ease-in;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    color: rgb(70, 6, 6);
+    font-size: 33px;
+    line-height: 43px;
+    letter-spacing: 1.5px;
+    transition: color 0.25s ease-in;
+  }
+
+  &__content {
+    color: rgb(70, 6, 6);
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    transition: color 0.25s ease-in;
+  }
+}
